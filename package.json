@@ -1,0 +1,37 @@
+{
+  "name": "svelte-checkbox",
+  "version": "1.0.0-beta.8",
+  "description": "A <Checkbox> component for Svelte",
+  "svelte": "Checkbox.svelte",
+  "module": "index.mjs",
+  "main": "index.js",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "svelte": "^3.0.0"
+  },
+  "keywords": [
+    "svelte",
+    "checkbox",
+    "input",
+    "svelte-checkbox",
+    "animate"
+  ],
+  "files": [
+    "index.mjs",
+    "index.js",
+    "Checkbox.svelte",
+    "utils.js"
+  ],
+  "author": "Hossein Shabani <hosseinshabani.work@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/HosseinShabani/svelte-checkbox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HosseinShabani/svelte-checkbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HosseinShabani/svelte-checkbox/issues"
+  }
+}
