@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "sirv-cli": "^0.4.4",
-    "svelte-checkbox": "1.0.0-beta.3"
+    "svelte-checkbox": "1.0.0-beta.9"
   }
 }
