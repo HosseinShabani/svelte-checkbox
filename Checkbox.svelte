@@ -10,6 +10,7 @@
     size = "3rem",
     name = "",
     id = "",
+    labelId = "",
     borderStyle,
     checkStyle,
     duration = 900,
@@ -75,7 +76,7 @@
     setProp("--checkbox-color-secondary", secondaryColor);
   });
 
-  export { checked, size, name, id, primaryColor, secondaryColor, duration };
+  export { checked, size, name, id, primaryColor, secondaryColor, duration, labelId };
 </script>
 
 <style>
@@ -144,7 +145,7 @@
   class:-changeBg={changeBg}
   class:-checked={checked || !canChange}
   style="width: {size};height: {size};">
-  <input type="checkbox" on:change={handleChange} {name} />
+  <input id={labelId} type="checkbox" on:change={handleChange} {name} />
   <svg class="checkbox__svg" preserveAspectRatio="none" viewBox="0 0 100 100">
     <rect class="checkbox__border" rx="15%" />
     <rect class="checkbox__border -active" style={borderStyle} rx="15%" />
