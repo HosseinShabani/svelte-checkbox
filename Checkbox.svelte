@@ -44,10 +44,10 @@
     css: {
       "stroke-dashoffset": {
         input: [65, 100],
-        output: [200, -20],
+        output: [300, 144],
         beforeStart: () => (changeBg = false)
       },
-      "stroke-dasharray": { input: [65, 100], output: [200, 96] }
+      "stroke-dasharray": { input: [65, 100], output: [100, 84] }
     },
     onChange: style => (checkStyle = style)
   });
