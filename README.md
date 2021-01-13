@@ -39,6 +39,7 @@ yarn add svelte-checkbox
 | primaryColor   | String  | #242432 | Primary color            |
 | secondaryColor | String  | #d8d8ea | Secondary color          |
 | checked        | Boolean | false   | Checked input            |
+| disabled       | Boolean | false   | disabled input           |
 
 <br />
 
@@ -62,6 +63,16 @@ yarn add svelte-checkbox
 <Checkbox on:change="{handleChange}" />
 ```
 
+<br />
+
+## Disabled checkbox example
+```html
+<script>
+  import Checkbox from "svelte-checkbox";
+</script>
+
+<Checkbox disabled />
+```
 <br />
 
 ## Full Usage
