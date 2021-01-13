@@ -3,11 +3,13 @@
   import { sineInOut } from "svelte/easing";
   import { createStyle } from "./utils";
 
+  
+  export let disabled = false;
+  
   let self,
     canChange = true,
     changeBg = false,
     checked = false,
-    disabled = false,
     size = "3rem",
     name = "",
     id = "",
@@ -77,7 +79,7 @@
     setProp("--checkbox-color-secondary", secondaryColor);
   });
 
-  export { disabled,checked, size, name, id, primaryColor, secondaryColor, duration, labelId };
+  export { checked, size, name, id, primaryColor, secondaryColor, duration, labelId };
 </script>
 
 <style>
@@ -140,6 +142,7 @@
 
   .checkbox__disabled {
     pointer-events: none;
+    opacity: 0.6;
   }
 </style>
 
