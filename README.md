@@ -35,6 +35,7 @@ yarn add svelte-checkbox
 | size           | String  | 3rem    | Component width & height |
 | name           | String  | -       | Input name               |
 | id             | String  | -       | Component id             |
+| labelId        | String  | -       | Input id                 |
 | class          | String  | -       | Component class          |
 | primaryColor   | String  | #242432 | Primary color            |
 | secondaryColor | String  | #d8d8ea | Secondary color          |
