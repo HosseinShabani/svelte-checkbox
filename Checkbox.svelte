@@ -54,16 +54,18 @@
     },
     onChange: style => (checkStyle = style)
   });
+  function runAnimations() {
+      borderAnimation.play();
+      checkAnimation.play();
+  }
+  function runReversedAnimations() {
+    borderAnimation.reverse();
+    checkAnimation.reverse();
+  }
+  $: checked ? runAnimations() : runReversedAnimations()
 
   const handleChange = () => {
     if (!canChange) return false;
-    if (checked) {
-      borderAnimation.reverse();
-      checkAnimation.reverse();
-    } else {
-      borderAnimation.play();
-      checkAnimation.play();
-    }
     canChange = false;
     checked = !checked;
     dispatch("change", checked);
