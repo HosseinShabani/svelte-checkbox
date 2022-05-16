@@ -1,6 +1,6 @@
 {
   "name": "svelte-checkbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A <Checkbox> component for Svelte",
   "svelte": "Checkbox.svelte",
   "module": "index.mjs",
@@ -22,10 +22,12 @@
     "animate"
   ],
   "files": [
-    "index.mjs",
+    "index.d.ts",
     "index.js",
     "Checkbox.svelte",
-    "utils.js"
+    "utils.js",
+    "Checkbox.d.ts",
+    "utils.d.ts"
   ],
   "author": "Hossein Shabani <hosseinshabani.work@gmail.com>",
   "license": "MIT",
