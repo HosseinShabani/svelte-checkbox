@@ -22,7 +22,7 @@
     "animate"
   ],
   "files": [
-    "index.mjs",
+    "index.d.ts",
     "index.js",
     "Checkbox.svelte",
     "utils.js",
