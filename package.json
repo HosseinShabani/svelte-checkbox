@@ -25,7 +25,8 @@
     "index.mjs",
     "index.js",
     "Checkbox.svelte",
-    "utils.js"
+    "utils.js",
+    "Checkbox.d.ts"
   ],
   "author": "Hossein Shabani <hosseinshabani.work@gmail.com>",
   "license": "MIT",
