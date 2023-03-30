@@ -3,6 +3,9 @@
   import { sineInOut } from "svelte/easing";
   import { createStyle } from "./utils";
 
+  
+  export let disabled = false;
+  
   let self,
     canChange = true,
     changeBg = false,
@@ -136,6 +139,11 @@
     --checkbox-border-width: var(--checkbox-border-width-active);
     stroke: var(--checkbox-color-primary);
   }
+
+  .checkbox__disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
 </style>
 
 <div
@@ -144,6 +152,7 @@
   class="checkbox {$$props.class}"
   class:-changeBg={changeBg}
   class:-checked={checked || !canChange}
+  class:disabled={disabled}
   style="width: {size};height: {size};">
   <input id={labelId} type="checkbox" on:change={handleChange} {name} />
   <svg class="checkbox__svg" preserveAspectRatio="none" viewBox="0 0 100 100">
